@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Advent Pro, sans-serif;
+    color: #FFF;
+    font-size: calc(0.90375rem + 0.045vw) !important;
+    overflow-wrap: break-word;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+/* header section*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #120639;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+.navbar__span {
+    padding: 1rem;
+}
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #a3a3a3;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.header {
+    display: flex;
+    background: #120639;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6%;
+    position: fixed;
+    z-index: 10;
+}
+
+.header__title {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 31px;
+    padding-top: 1%;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.header__login {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    padding-right: 3rem;
+    color: #FFF;
+}
+
+.header__login:hover {
+    color: #a3a3a3;
+    transition: all 0.3s;
+}
+
+/* university section*/
+
+.university {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(/img/Университет-МВД.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.university img {
+    width: 100vw;
+    height: 70%;
+}
+
+.university__title::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    background-image: url(/img/uryui_mvd_rossii.png);
+    opacity: 30%;
+    height: 22rem;
+    width: 20rem;
+    margin-left: 15rem;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.university__title {
+    font-size: 70px;
+    padding-left: 10rem;
+    padding-top: 22rem;
+}
+
+/* category section*/
+
+.content {
+    background-image: url(/img/3747425.jpg);
+    background-size: initial;
+}
+
+.category {
+    font-size: 34px;
+}
+
+/* accordion */
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+details {
+  margin: 2rem;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+
+summary {
+	opacity: 0.9;
+}
+
+.summary__link-main {
+    display: inline-block;
+    color: #FFF;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.summary__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFF;
+    transition: max-height 0.5s;
+    margin-left: 15rem;
+}
+
+.summary__link:hover {
+    color: #a3a3a3;
+    transition: all 0.3s;
+}
+
+.summary__link-main:hover {
+    color: #a3a3a3;
+    transition: all 0.3s;
+}
+
+.single__link {
+    padding-left: 5rem;
+    padding-top: 0.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+.accordion__li {
+    list-style: disc;
+}
+
+.facade {
+    filter: contrast(0%) brightness(2);
+    opacity: 70%;
+    width: 100vw;
+}
+
+.category__title {
+    font-size: 60px;
+    padding-top: 5rem;
+    padding-left: 15rem;
+}
+
+.category input{
+    padding: 0.5rem;
+    background: transparent;
+    border-radius: 5rem;
+    border-color: #FFF;
+    justify-content: left;
+    margin-left: 45%;
+    background: url(/img/magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    font-size: 15px;
+    background-size: 10%;
+    background-position: 10rem;
+    color: #FFF;
+}
+
+
+/* buttons section */
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    margin-top: 5rem;
+    height: 1600px;
+    width: 100vw;
+}
+
+.button {
+    color: #FFF;
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    background: url(/img/gerb-mvd.png), radial-gradient(rgb(9, 70, 143), rgb(1, 20, 53));
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    font-size: 28px;
+    font-weight: 800;
+    padding: 2rem;
+    width: 500px;
+    display: inline-block;
+    white-space: normal !important;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button-pair2 {
+    margin: 1.25rem 0 1.25rem 0;
+}
+
+.button:hover {
+    color: #a3a3a3;
+    transition: all 0.3s;
+}
+
+.swiper {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 30px;
+    height: 100%;
+    width: 75%;
+    margin-top: 2rem;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    border: #FFF 1px solid;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 5rem;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* adaptation */
+
+@media (min-width: 312px) {
+    .header {
+       width: 100vw; 
+    }
+}
+
+@media (max-width: 800px) {
+   
+    .header {
+        padding: 0;
+        margin: 0;
+       
+        width: 100vw;
+        height: 8vh;
+    }
+
+    .header__title {
+        padding: 1%;
+        padding-right: 0;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .navbar__span {
+        font-size: 18px;
+        padding: 1%;
+   }
+
+    .header__login {
+        font-size: 18px;
+        padding: 1%;
+        padding-left: 0;
+        padding-right: 5%;
+    }
+
+    .buttons {
+      flex-direction: column;
+    }
+   
+    .university__title {
+        font-size: 25px;
+        padding-top: 10rem;
+        padding-left: 2rem;
+        font-size: 40px;
+        width: 75%;
+        max-height: 70vh;
+    }
+
+    .university {
+        width: fit-content;
+        height: 100vh;
+    }
+
+    .university img {
+        width: fit-content;
+    }
+
+    .university__title::before {
+        margin: 0;
+        padding: 0;
+        z-index: 0;
+        height: 40%;
+        width: 40%;
+        padding-top: 5rem;
+        background-size: contain;
+    }
+
+    .navbar__span {
+        font-size: 18px;
+    } 
+
+    .category {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .category__title {
+        font-size: 25px;
+        display: flex;
+        padding: 3rem;
+    }
+
+    .category input {
+        font-size: 12px;
+        margin-left: 5rem;
+        padding: 0.5rem;
+        color: #FFF;
+        width: fit-content;
+        
+    }
+
+    .summary__link {
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 0.7rem;
+        max-width: 220px;
+        margin: 0;
+        border-radius: 0.5rem;
+    }
+
+    .button-pair, .button-pair2 {
+        margin: 0.5rem;
+        padding: 0;
+    }
+ 
+    .swiper-button-next {
+        border: none;
+        margin-left: 15rem;
+        color: #FFF;
+    }
+    
+    
+    .swiper-button-prev {
+        border: none;
+        margin-right: 15rem;
+        color: #FFF;
+    }
+    
+    .buttons {
+       margin-top: 3rem;
+       height: 800px; 
+    }
+
+    .swiper {
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    
+}
