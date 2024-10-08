@@ -339,7 +339,7 @@ li {
     }
    
     .university__title {
-        font-size: 15px;
+        font-size: 32px !important;
         padding-top: 10rem;
         padding-left: 2rem;
         font-size: 40px;
