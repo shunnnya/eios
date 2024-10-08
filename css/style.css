@@ -106,7 +106,7 @@ main {
 .university {
     width: 100vw;
     height: 80vh;
-    background-image: url(/img/mvd-university.jpg);
+    background-image: url(../img/mvd-university.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -120,7 +120,7 @@ main {
     content: "";
     position: absolute;
     z-index: 0;
-    background-image: url(/img/uryui_mvd_rossii.png);
+    background-image: url(../img/uryui_mvd_rossii.png);
     opacity: 30%;
     height: 22rem;
     width: 20rem;
@@ -138,7 +138,7 @@ main {
 /* category section*/
 
 .content {
-    background-image: url(/img/3747425.jpg);
+    background-image: url(../img/3747425.jpg);
     background-size: initial;
 }
 
@@ -229,7 +229,7 @@ li {
     border-color: #FFF;
     justify-content: left;
     margin-left: 45%;
-    background: url(/img/magnifying-glass-solid.svg);
+    background: url(../img/magnifying-glass-solid.svg);
     background-repeat: no-repeat;
     font-size: 15px;
     background-size: 10%;
@@ -254,7 +254,7 @@ li {
     flex-grow: 1;
     overflow-wrap: break-word;
     text-decoration: none;
-    background: url(/img/gerb-mvd.png), radial-gradient(rgb(9, 70, 143), rgb(1, 20, 53));
+    background: url(../img/gerb-mvd.png), radial-gradient(rgb(9, 70, 143), rgb(1, 20, 53));
     border: 1px solid #fff;
     border-radius: 2rem;
     font-size: 28px;
