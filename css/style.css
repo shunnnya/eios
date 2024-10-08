@@ -319,7 +319,7 @@ li {
         padding: 1%;
         padding-right: 0;
         margin: 0;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .navbar__span {
@@ -339,11 +339,11 @@ li {
     }
    
     .university__title {
-        font-size: 25px;
+        font-size: 20px;
         padding-top: 10rem;
         padding-left: 2rem;
         font-size: 40px;
-        width: 75%;
+        width: 95%;
         max-height: 70vh;
     }
 
@@ -378,7 +378,7 @@ li {
     .category__title {
         font-size: 25px;
         display: flex;
-        padding: 3rem;
+        padding: 2rem;
     }
 
     .category input {
