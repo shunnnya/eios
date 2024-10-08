@@ -343,7 +343,8 @@ li {
         padding-top: 10rem;
         padding-left: 2rem;
         font-size: 40px;
-        width: 95%;
+        width: 90%;
+        overflow-wrap: break-word;
         max-height: 60vh;
     }
 
