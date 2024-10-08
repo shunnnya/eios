@@ -106,7 +106,7 @@ main {
 .university {
     width: 100vw;
     height: 80vh;
-    background-image: url(/img/Университет-МВД.jpg);
+    background-image: url(/img/mvd-university.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
