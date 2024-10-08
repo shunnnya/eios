@@ -245,7 +245,7 @@ li {
     flex-wrap: wrap;
     flex-flow: column wrap;
     margin-top: 5rem;
-    height: 1600px;
+    height: 1800px;
     width: 100vw;
 }
 
@@ -311,7 +311,6 @@ li {
     .header {
         padding: 0;
         margin: 0;
-       
         width: 100vw;
         height: 8vh;
     }
@@ -320,7 +319,7 @@ li {
         padding: 1%;
         padding-right: 0;
         margin: 0;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .navbar__span {
@@ -384,11 +383,12 @@ li {
 
     .category input {
         font-size: 12px;
-        margin-left: 5rem;
+        margin-left: 1rem;
         padding: 0.5rem;
         color: #FFF;
+        height: fit-content;
         width: fit-content;
-        
+        background-position: 90%;
     }
 
     .summary__link {
