@@ -139,11 +139,13 @@ main {
 
 .content {
     background-image: url(../img/3747425.jpg);
-    background-size: initial;
+    background-size: contain;
+    height: 500vh;
 }
 
 .category {
     font-size: 34px;
+    height: 100vh;
 }
 
 /* accordion */
@@ -244,8 +246,8 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-flow: column wrap;
-    margin-top: 5rem;
-    height: 1800px;
+   
+    height: 1250px;
     width: 100vw;
 }
 
@@ -272,7 +274,31 @@ li {
     margin: 1.25rem 0 1.25rem 0;
 }
 
+.button-fat {
+    color: #FFF;
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    background: url(../img/gerb-mvd.png), radial-gradient(rgb(9, 70, 143), rgb(1, 20, 53));
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    font-size: 28px;
+    font-weight: 800;
+    padding: 2rem;
+    width: 1000px;
+    display: inline-block;
+    white-space: normal !important;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .button:hover {
+    color: #a3a3a3;
+    transition: all 0.3s;
+}
+
+.button-fat:hover {
     color: #a3a3a3;
     transition: all 0.3s;
 }
@@ -280,12 +306,12 @@ li {
 .swiper {
     display: flex;
     text-align: center;
-    justify-content: space-between;
     font-size: 30px;
     height: 100%;
     width: 75%;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
+
 
 .swiper-button-prev, .swiper-button-next {
     border: #FFF 1px solid;
@@ -303,6 +329,31 @@ li {
 @media (min-width: 312px) {
     .header {
        width: 100vw; 
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    
+    .university__title {
+        padding-top: 10rem;
+        padding-left: 2rem;
+        font-size: 60px;
+    }
+
+    .buttons {
+        height: 100%;
+    }
+
+    .button {
+        margin-bottom: 1rem;
+    }
+
+    .button-pair2 {
+        margin: 0;
+    }
+
+    .button-fat {
+        width: 500px !important;
     }
 }
 
@@ -399,7 +450,7 @@ li {
         list-style: none;
     }
 
-    .button {
+    .button, .button-fat {
         font-size: 12px;
         padding: 0.7rem;
         max-width: 220px;
@@ -426,15 +477,23 @@ li {
     }
     
     .buttons {
-       margin-top: 3rem;
        height: 800px; 
     }
 
     .swiper {
         height: 100%;
         width: 100%;
-        margin-top: 0;
+        margin-top: 3rem;
     }
 
-    
+    .summary marker {
+        size: 80px;
+    }
+
+    .category, details, summary, ul, li, .single__link, .summary__link {
+        font-size: 14px !important;
+        padding: 0;
+        margin: 0.5rem;
+    }
+
 }
