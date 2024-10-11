@@ -422,6 +422,11 @@ li {
         font-size: 18px;
     } 
 
+    .content {
+       height: 150vh; 
+       background-repeat: initial;
+    }
+
     .category {
         width: 100%;
         font-size: 18px;
